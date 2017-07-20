@@ -24,6 +24,6 @@ defmodule Pheasant do
     map = hd(response)
     %{"busStopDetailsBaseUrl" => 3, "busStopDetailsHtml" => html} = map
     t = tl(Floki.find(html, ".col-xs-3.col-md-3"))
-    Enum.map(t, fn obj -> hd(elem(obj, 2)) end)
+    Enum.map(t, fn obj -> if elem(obj, 2) != [] do hd(elem(obj, 2)) end end)
   end
 end
