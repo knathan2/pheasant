@@ -32,6 +32,6 @@ defmodule Pheasant.Mixfile do
       {:httpoison, "~> 0.12.0"},
       {:feeder_ex, "~> 1.1"},
       {:floki, "~> 0.17.2"}, 
-      {:poison, "~> 3.1"}]
+      {:poison, "~> 2.0"}]
   end
 end
